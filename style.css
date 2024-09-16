@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.puzzle-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+.puzzle-piece {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ddd;
+  cursor: grab;
+  background-size: cover;
+}
+.drop-zone {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  border: 2px dashed lightgray;
+}
+/* Conteneur pour les pièces avec défilement horizontal */
+.piece-container {
+  display: flex;
+  /* overflow-x: auto; */
+  width: 605px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 2px solid #000;
+  flex-wrap: wrap;
+}
+
+.piece-container .puzzle-piece {
+  border: 3px solid lightgray;
+}
